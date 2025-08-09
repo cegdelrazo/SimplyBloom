@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SimplyBloom — Envolvemos tus flores, a tu estilo</title>
+  <meta name="description" content="Entrega de flores con envoltura personalizada con tus fotos. Simple, bonito y a tiempo.">
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#ff6aa0" />
+  <meta name="color-scheme" content="light only" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="/" />
+
+  <!-- Favicon (mismo SVG del logo) -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" sizes="any" />
+  <!-- Safari pinned tab (opcional, usa el mismo svg con color del logo) -->
+  <link rel="mask-icon" href="assets/logo.svg" color="#ff6aa0" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="SimplyBloom" />
+  <meta property="og:title" content="SimplyBloom — Envolvemos tus flores, a tu estilo" />
+  <meta property="og:description" content="Envoltura personalizada con tus fotos y entrega mínima al día siguiente en Monterrey, Guadalajara y CDMX." />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="assets/img_5415.webp" />
+
+  <!-- Preconnect a WhatsApp (CTAs) -->
+  <link rel="preconnect" href="https://w.app" />
+  <link rel="preconnect" href="https://wa.link" />
+
+  <style>
+    :root {
+      --bg: #fff6f9;
+      --card: #ffffff;
+      --muted: #5a5a5a;
+      --fg: #2a2a2a;
+      --brand: #ff6aa0;
+      --brand-light: #ffd4e2;
+      --radius: 16px;
+      --shadow: 0 6px 20px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family: 'Segoe UI', Roboto, Arial, sans-serif;line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1200px;margin-inline:auto;padding:24px}
+
+    /* Topbar */
+    .top{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:12px;box-shadow:var(--shadow)}
+    .brand{font-weight:700;font-size:20px}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin:34px 0 18px}
+    .hero h1{font-size:clamp(28px,3.6vw,44px);margin:.1em 0 .2em;color:var(--brand)}
+    .hero p{color:var(--muted);font-size:clamp(14px,1.9vw,18px)}
+    .pill{display:inline-flex;gap:10px;align-items:center;background:var(--brand-light);color:var(--brand);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:600}
+    .cta-row{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:14px;border:2px solid var(--brand);background:#fff;font-weight:600;transition:.3s}
+    .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+    .btn:hover{opacity:.9}
+
+    /* Badges */
+    .badges{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+    .badge{font-size:12px;background:#fff;border:2px solid var(--brand-light);border-radius:999px;padding:6px 10px;color:var(--brand);font-weight:500}
+
+    /* Grid gallery */
+    .grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;margin-top:24px}
+    .card{background:var(--card);border:2px solid var(--brand-light);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .card img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;display:block;transition:transform .35s ease}
+    .card:hover img{transform:scale(1.03)}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:34px 0}
+    .feature{background:var(--card);border:2px solid var(--brand-light);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .feature h3{margin:.2em 0;font-size:18px;color:var(--brand)}
+    .feature p{color:var(--muted);font-size:14px}
+
+    /* Footer */
+    footer{border-top:2px solid var(--brand-light);margin-top:30px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+    .sm{opacity:.85}
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2, 1fr)}
+      .features{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px) {
+      .grid{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+      .wrap{padding:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <img class="logo" src="assets/logo.webp" alt="SimplyBloom logo">
+      <div class="brand">SimplyBloom</div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <span class="pill">Nuevo · Envoltura con tus fotos</span>
+        <h1>Envío de flores que se siente tuyo</h1>
+        <p>Arreglos bonitos, pero el toque especial está en la <strong>envoltura</strong>: elige el arreglo floral, envíanos fotos para imprimir en la envoltura y espera la entrega (mínimo al día siguiente).</p>
+        <div class="badges">
+          <span class="badge">Entrega mínima al día siguiente</span>
+          <span class="badge">Envoltura con tus fotos impresas</span>
+          <span class="badge">Cobertura en Monterrey, Guadalajara y CDMX</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="https://w.app/busc4a" target="_blank" rel="noopener">Cotizar Monterrey</a>
+          <a class="btn primary" href="https://w.app/ikdkmr" target="_blank" rel="noopener">Cotizar Guadalajara</a>
+          <a class="btn primary" href="https://wa.link/r4swji" target="_blank" rel="noopener">Cotizar CDMX</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img_5415.webp" alt="Hero arreglo">
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2 style="font-size:22px;margin:6px 0 10px;color:var(--brand)">Algunas ideas</h2>
+      <div class="grid">
+        <figure class="card">
+          <img src="assets/img_5415.webp" alt="Arreglo SimplyBloom 1">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5396.webp" alt="Arreglo SimplyBloom 2">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5405.webp" alt="Arreglo SimplyBloom 3">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5393.webp" alt="Arreglo SimplyBloom 4">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5377.webp" alt="Arreglo SimplyBloom 5">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5394.webp" alt="Arreglo SimplyBloom 6">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5374.webp" alt="Arreglo SimplyBloom 7">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5392.webp" alt="Arreglo SimplyBloom 8">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5375.webp" alt="Arreglo SimplyBloom 9">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5411.webp" alt="Arreglo SimplyBloom 10">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5395.webp" alt="Arreglo SimplyBloom 11">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5397.webp" alt="Arreglo SimplyBloom 12">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5413.webp" alt="Arreglo SimplyBloom 13">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5376.webp" alt="Arreglo SimplyBloom 14">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5398.webp" alt="Arreglo SimplyBloom 15">
+        </figure>
+        <figure class="card">
+          <img src="assets/img_5414.webp" alt="Arreglo SimplyBloom 16">
+        </figure>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>1) Elige tu arreglo</h3>
+        <p>Selecciona tu arreglo floral favorito y mándanos las fotos que quieras imprimir en la envoltura.</p>
+      </div>
+      <div class="feature">
+        <h3>2) Te cotizamos rápido</h3>
+        <p>Envíanos las referencias del arreglo y tus fotos, y te confirmamos precio y tiempo de entrega.</p>
+      </div>
+      <div class="feature">
+        <h3>3) Entrega segura</h3>
+        <p>Preparamos tu arreglo y lo enviamos donde nos indiques, con entrega mínima al día siguiente.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span class="sm">© 2025 SimplyBloom · Hecho con amor y buena envoltura</span>
+    </footer>
+  </div>
+</body>
+</html>
